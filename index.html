@@ -2,26 +2,68 @@
 <html>
     <head>
         <title>Khaana — Our Products (Mexican Kitchen)</title>
+        <style>
+            :root {
+                --terracotta: #D95D39;
+                --cactus: #2E7D32;
+                --gold: #FFC107;
+                --ink: #1b1b1b;
+                --cream: #fff8ea;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: var(--cream);
+                color: var(--ink);
+            }
+            h1 {
+                color: var(--terracotta);
+            }
+            h2 {
+                color: var(--cactus);
+            }
+            h3 {
+                color: var(--terracotta);
+            }
+            a {
+                color: var(--cactus);
+            }
+            footer {
+                margin-top: 20px;
+                padding-top: 10px;
+                border-top: 2px solid var(--gold);
+                color: var(--terracotta);
+            }
+            .papel {
+                height: 12px;
+                background: repeating-linear-gradient(
+                    90deg,
+                    var(--terracotta) 0 24px,
+                    var(--gold) 24px 48px,
+                    var(--cactus) 48px 72px
+                );
+            }
+        </style>
     </head>
-    <body style="font-family: Arial; background-color: #fff8f0;">
+    <body>
+        <div class="papel"></div>
         <h1><u>Khaana Products</u></h1>
         <p>
             Welcome to <b>Khaana</b>, our Mexican restaurant. Below are some of our
-            <i>authentic dishes</i> with short descriptions, not just a list.
+            <i>authentic dishes</i> with short descriptions.
         </p>
-        <h2 style="color: darkred;">Tacos al Pastor</h2>
+        <h2>Tacos al Pastor</h2>
         <p>
             Pork marinated with spices and pineapple, served with onions and cilantro.
-            <br><span style="color: darkblue;">Price: $10.95</span>
+            <br><span style="color: var(--gold);">Price: $10.95</span>
         </p>
         <h2 style="color: darkred;">Enchiladas Verdes</h2>
         <p>
             Corn tortillas filled with chicken and topped with tomatillo salsa. 
-            <br><span style="color: darkblue;">Price: $12.95</span>
+            <br><span style="color: var(--gold);">Price: $12.95</span>
         </p>
         <h2 style="color: darkred;">Veggie Bowl</h2>
         <p> Grilled vegetables, rice, beans, and avocado for a fresh, filling option.
-            <br><span style="color: darkblue;">Price: $11.50</span>
+            <br><span style="color: var(--gold);">Price: $11.50</span>
         </p>
         <h3>Popular Categories</h3>
         <ul>
